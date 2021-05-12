@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>inherit</title>
+  <style>
+  #outer div ul .nav a {
+    background-color: blue;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  div div li a {
+    color: red;
+  }
+
+  /* 添加一个样式设置，将链接的背景色改成白色。注意，不要使用颜色值或颜色关键字 */
+  #outer div ul .nav a {
+    background-color: initial;
+  }
+  </style>
+</head>
+<body>
+<div id="outer" class="container">
+  <div id="inner" class="container">
+    <ul>
+      <li class="nav"><a href="#">One</a></li>
+      <li class="nav"><a href="#">Two</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

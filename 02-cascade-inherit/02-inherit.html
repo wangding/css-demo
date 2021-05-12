@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>inherit</title>
+  <style>
+  /* 设置网页字体为绿色，所有元素继承这个样式 */
+  body {
+    color: green;
+  }
+
+  /* 设置 emphasize 类的样式，字体为红色，覆盖继承 */
+  .emphasize {
+    color: red;
+  }
+
+  /* 设置 span 元素样式，阻止继承，恢复成浏览器默认样式 */
+  span {
+    color: initial;
+  }
+  </style>
+</head>
+<body>
+<h1>我是一级标题</h1>
+
+<p>这是一个段落文本，在文本中有一个 <span>span element</span> 并且还有一个 <a href="http://www.baidu.com">链接</a>。</p>
+
+<p>这是第二段，包含了一个 <em>强调</em> 元素。</p>
+
+<ul>
+  <li>项目 1</li>
+  <li class="emphasize">项目 2</li>
+  <li>项目 <em>三</em></li>
+</ul>
+</body>
+</html>
