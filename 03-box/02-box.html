@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>box</title>
+  <style>
+  /* 设置 box 类的样式，5px 紫色实线边框，背景色为浅灰色，内边距为 40px，宽度为 300px，高度为 150px，外边距为 40px */
+  .box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+  }
+
+  /* 设置 alternate 类的盒子模型为 border-box，观察两个盒子在页面上的尺寸差异 */
+  .alternate {
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+<body>
+<div class="box">I use the standard box model.</div>
+<div class="box alternate">I use the alternate box model.</div>
+</body>
+</html>

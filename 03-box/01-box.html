@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>box</title>
+  <style>
+  /* 给 p, ul 加 2px 紫色实线边框和 0.5em 内边距 */
+  p, ul {
+    border: 2px solid purple;
+    padding: 0.5em;
+  }
+
+  /* 给 .block 和 li 加 2px 蓝色实线边框及 0.5em 内边距 */
+  .block, li {
+    padding: 0.5em;
+    border: 2px solid blue;
+  }
+
+  /* 设置 li 没有项目符号，设置 ul 内部为 flex 弹性盒子布局 */
+  ul {
+    list-style: none;
+    display: flex;
+  }
+
+  /* 设置 block 类的样式为块样式 */
+  .block {
+    display: block;
+  }
+  </style>
+</head>
+<body>
+<p>I am a paragraph. A short one.</p>
+<ul>
+  <li>Item One</li>
+  <li>Item Two</li>
+  <li>Item Three</li>
+</ul>
+<p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
+</body>
+</html>

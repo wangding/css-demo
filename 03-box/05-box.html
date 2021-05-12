@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>box</title>
+  <style>
+  /* 设置容器 container 的样式：上边框 5px 绿色点状线，右边框 1px 黑色实线，下边框 20px 深蓝色双实线 */
+  .container {
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double darkblue;
+    padding: 20px;
+  }
+
+  /* 设置 box 的样式：所有边框线为 1px 黑色实线，上边框为点线，右边框的宽度为 20px，下边框的颜色为粉色，内边距为 20px，背景色为浅灰色 */
+  .box {
+    border: 1px solid black;
+    border-top-style: dotted;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+    padding: 20px;
+    background-color: lightgray;
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">Change my borders.</div>
+</div>
+</body>
+</html>

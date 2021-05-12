@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>box</title>
+  <style>
+  /* 设置段落样式：边框 2px 紫色实线，宽度 300px，行高 30px */
+  p {
+    border: 2px solid purple;
+    width: 300px;
+    line-height: 30px;
+  }
+
+  /* 设置 span 样式：宽度 80px，高度 50px，边框 2px 蓝色实线，浅蓝背景色，外边距 20px，内边距 20px */
+  /* 观察 span 覆盖了部分段落文字，导致排版混乱 */
+  /* 修改 span 的显示类型为 inline-block，观察修改后的 span 的效果，修改前后 span 盒子尺寸的变化以及边距的效果 */
+  span {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    border: 2px solid blue;
+  }
+  </style>
+</head>
+<body>
+<p>
+I am a paragraph and this is a <span>span</span> inside that paragraph. A span is an inline element and so does not respect width and height.
+</p>
+</body>
+</html>

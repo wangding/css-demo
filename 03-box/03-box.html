@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>box</title>
+  <style>
+  /* 设置容器 container 的样式：边框 5px 蓝色实线，外边距 40px */
+  .container {
+    border: 5px solid blue;
+    margin: 40px;
+  }
+
+  /* 设置盒子 box 的样式：边框 5px 紫色实线，浅灰背景色，高 150px，内边距 10px，外边距 40px */
+  /* 将上外边距改成 -40px，其他不变，观察 box 和 container 的位置关系 */
+  .box {
+    border: 5px solid purple;
+    background-color: lightgray;
+    height: 150px;
+    padding: 10px;
+    margin-top: -40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">Change my margin.</div>
+</div>
+</body>
+</html>

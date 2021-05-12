@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>box</title>
+  <style>
+  /* 设置 container 容器样式：边框 5px 紫色实线 */
+  .container {
+    border: 5px solid purple;
+  }
+
+  /* 设置段落样式：边框 5px 蓝色实线，上下内边距 10px，左右内边距 0px */
+  p {
+    border: 5px solid blue;
+    padding: 10px 0;
+  }
+
+  /* 设置第一个段落样式：下外边距 50px */
+  .one {
+    margin-bottom: 50px;
+  }
+
+  /* 设置第二个段落样式：上外边距 30px */
+  /* 将第二个段落的上外边距改为 0px，观察外边距折叠现象 */
+  .two {
+    margin-top: 30px;
+  }
+  </style>
+</head>
+<div class="container">
+  <p class="one">I am paragraph one.</p>
+  <p class="two">I am paragraph two.</p>
+</div>
+<body>
+</body>
+</html>
