@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>border</title>
+  <style>
+  body {
+    display: flex;
+  }
+
+  ul {
+    width: 400px;
+    line-height: 25px;
+  }
+
+  /* 设置 .box 默认样式：宽度 300px，高度 300px，盒子模型 border-box，边框 10px 蓝色实线 */
+  .box {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 10px solid blue;
+  }
+
+  /* 设置边框为圆角矩形，圆角大小为 30px */
+  .round-rectangle {
+    border-radius: 30px;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色圆环 */
+  .ring {
+    border-radius: 150px;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色圆形 */
+  .circle {
+    border-radius: 150px;
+    border-width: 150px;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色左上直角三角形 */
+  .ltrt {
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: blue;
+    border-right-color: white;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色右上直角三角形 */
+  .rtrt {
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: blue;
+    border-right-color: blue;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色右下直角三角形 */
+  .rbrt {
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: white;
+    border-right-color: blue;
+    border-bottom-color: blue;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色左下直角三角形 */
+  .lbrt {
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: blue;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色左等腰三角形 */
+  .lit {
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色上等腰三角形 */
+  .tit {
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: blue;
+    border-right-color: white;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色右等腰三角形 */
+  .rit {
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: white;
+    border-right-color: blue;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色下等腰三角形 */
+  .bit {
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: blue;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色沙漏 */
+  .sandglass {
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: blue;
+    border-right-color: white;
+    border-bottom-color: blue;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色蝴蝶结 */
+  .bow {
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: white;
+    border-right-color: blue;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色左半圆 */
+  .left-circle {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: blue;
+    border-right-color: white;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色上半圆 */
+  .top-circle {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: blue;
+    border-right-color: blue;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色右半圆 */
+  .right-circle {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: white;
+    border-right-color: blue;
+    border-bottom-color: blue;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色下半圆 */
+  .bottom-circle {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: blue;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色左四分之一圆 */
+  .left-quarter {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: blue;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色上四分之一圆 */
+  .top-quarter {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: blue;
+    border-right-color: white;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色右四分之一圆 */
+  .right-quarter {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: white;
+    border-right-color: blue;
+    border-bottom-color: white;
+  }
+
+  /* 利用边框样式，将 .box 显示为蓝色下四分之一圆 */
+  .bottom-quarter {
+    border-radius: 150px;
+    border-width: 150px;
+    border-left-color: white;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: blue;
+  }
+  </style>
+</head>
+<body>
+<div class="menu">
+  选择边框样式：
+  <ul>
+    <li><a href="#!/">普通矩形</a></li>
+    <li><a href="#!/round-rectangle">圆角矩形</a></li>
+    <li><a href="#!/ring">圆环</a></li>
+    <li><a href="#!/circle">圆形</a></li>
+    <li><a href="#!/ltrt">左上直角三角形</a></li>
+    <li><a href="#!/rtrt">右上直角三角形</a></li>
+    <li><a href="#!/rbrt">右下直角三角形</a></li>
+    <li><a href="#!/lbrt">左下直角三角形</a></li>
+    <li><a href="#!/lit">左等腰三角形</a></li>
+    <li><a href="#!/tit">上等腰三角形</a></li>
+    <li><a href="#!/rit">右等腰三角形</a></li>
+    <li><a href="#!/bit">下等腰三角形</a></li>
+    <li><a href="#!/bow">蝴蝶结</a></li>
+    <li><a href="#!/sandglass">沙漏</a></li>
+    <li><a href="#!/left-circle">左半圆</a></li>
+    <li><a href="#!/top-circle">上半圆</a></li>
+    <li><a href="#!/right-circle">右半圆</a></li>
+    <li><a href="#!/bottom-circle">下半圆</a></li>
+    <li><a href="#!/left-quarter">左四分之一圆</a></li>
+    <li><a href="#!/top-quarter">上四分之一圆</a></li>
+    <li><a href="#!/right-quarter">右四分之一圆</a></li>
+    <li><a href="#!/bottom-quarter">下四分之一圆</a></li>
+  </ul>
+</div>
+<div class="box"></div>
+<script>
+window.onhashchange = function() {
+  let box = document.querySelector(".box");
+      strHash = window.location.hash,
+      style = strHash.substring(3, strHash.length);
+
+  box.setAttribute("class", "box " + style);
+};
+</script>
+</body>
+</html>
