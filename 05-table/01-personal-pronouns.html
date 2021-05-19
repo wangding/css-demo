@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>Personal pronouns table</title>
+  <style>
+    table   {
+      border-collapse: collapse;
+      width: 500px;
+    }
+
+    th[rowspan="5"] {
+      width: 20%;
+    }
+
+    th[rowspan="3"] {
+      width: 20%;
+    }
+
+    th.symbol {
+      width: 10%;
+    }
+
+    th, td  {
+      border: 1px solid;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    caption {
+      line-height: 60px;
+    }
+
+    tbody tr:nth-child(1) {
+      border-top: 5px solid;
+      border-bottom: 5px solid;
+    }
+
+    tbody tr:nth-last-child(3) th:nth-child(1),
+    tbody tr:nth-last-child(1) {
+      border-bottom: 5px solid;
+    }
+
+    tr td:nth-last-child(1),
+       th:nth-last-child(1) {
+      border-right-color: white;
+    }
+
+    tr td:nth-child(1),
+       th:nth-child(1) {
+      border-left-color: white;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>人称代词</caption>
+    <tr>
+      <td colspan="3"></td>
+      <th scope="col">Subject</th>
+      <th scope="col">Object</th>
+    </tr>
+    <tr>
+      <th rowspan="5" scope="rowgroup">单数</th>
+      <th colspan="2" scope="row">第一人称</th>
+      <td>I</td>
+      <td>me</td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">第二人称</th>
+      <td>you</td>
+      <td>you</td>
+    </tr>
+    <tr>
+      <th rowspan="3" scope="rowgroup">第三人称</th>
+      <th class="symbol" scope="row">♂</th>
+      <td>he</td>
+      <td>him</td>
+    </tr>
+    <tr>
+      <th class="symbol" scope="row">♀</th>
+      <td>she</td>
+      <td>her</td>
+    </tr>
+    <tr>
+      <th class="symbol" scope="row">o</th>
+      <td>it</td>
+      <td>it</td>
+    </tr>
+    <tr>
+      <th rowspan="3" scope="rowgroup">复数</th>
+      <th colspan="2" scope="row">第一人称</th>
+      <td>we</td>
+      <td>we</td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">第二人称</th>
+      <td>you</td>
+      <td>you</td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row">第三人称</th>
+      <td>they</td>
+      <td>they</td>
+    </tr>
+  </table>
+  </body>
+</html>
