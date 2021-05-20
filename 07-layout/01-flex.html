@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="name=wangding, email=408542507@qq.com">
+  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">
+  <title>flexbox</title>
+  <style>
+  body, html, div {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .wrapper div {
+    flex: 1;
+  }
+
+  .box1 {
+    background-color: lightgreen;
+  }
+
+  .box2 {
+    background-color: lightblue;
+  }
+
+  .box3 {
+    background-color: lightpink;
+  }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="box1">One</div>
+  <div class="box2">Two</div>
+  <div class="box3">Three</div>
+</div>
+</body>
+</html>
